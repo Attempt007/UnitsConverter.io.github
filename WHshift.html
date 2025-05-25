@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signal Converter</title>
+  <link rel="stylesheet" href="WHshift.css">
+</head>
+<body>
+  <h1>Signal & Engineering Unit Converter</h1>
+  <div class="converter">
+
+    <div class="mode-section">
+      <label><input type="radio" name="signalType" value="ma" checked> 4–20 mA</label>
+      <label><input type="radio" name="signalType" value="voltage"> 0–10 V</label>
+    </div>
+
+    <div class="mode-section">
+      <label><input type="radio" name="direction" value="signalToEng" checked> Signal → Engineering Units</label>
+      <label><input type="radio" name="direction" value="engToSignal"> Engineering Units → Signal</label>
+    </div>
+
+    <label for="inputValue" id="inputLabel">Input Signal:</label>
+    <input type="number" id="inputValue" step="0.01" placeholder="e.g. 12"/>
+
+    <label for="minVal">Engineering Min Value:</label>
+    <input type="number" id="minVal" placeholder="e.g. 0"/>
+
+    <label for="maxVal">Engineering Max Value:</label>
+    <input type="number" id="maxVal" placeholder="e.g. 100"/>
+        <!-- Navigation Links -->
+    <div class="B1">
+        <a href="HBcalender.html">PKG shift</a>
+ 
+        <a href="calculator.html">BBT Calculator</a>
+    </div>
+
+    <div class="result" id="result">Converted Value: —</div>
+  </div>
+
+  <script src="WHshift.js"></script>
+</body>
+</html>

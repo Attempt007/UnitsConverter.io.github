@@ -66,14 +66,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Create result message
         const resultMessageStr = `
-            *Note: 1 pallet= 20layers= 5940 cans || 1 pallet= 14layers= 1400 cartons\n
-    Results of ${bbt} HL at OPI ${opiPercentage}%\n
-            🕒 Cal_Time : ${actualTimeStr}\n
-            📅 Est_Time : ${estimatedTimeStr}\n
-            ━━━━━━━━━━━━━━\n
-            🥫 Et. Cans : ${Math.floor(pal)} P, ${Math.floor(layer)} L, ${Math.floor(can)} cans\n
-            ━━━━━━━━━━━━━━\n
-            📦 Et. Cartons : ${Math.floor(pall)} P, ${Math.floor(lay)} L, ${Math.floor(cart)} pcs\n
+    *Note: 1 pallet = 20 layers = 5940 cans
+           1 pallet = 14 layers = 1400 cartons
+
+   => Results of ${bbt} HL at OPI ${opiPercentage}%
+            ━━━━━━━━━━━━━━
+            🕒 Cal_Time : ${actualTimeStr}
+            📅 Est_Time : ${estimatedTimeStr}
+            ━━━━━━━━━━━━━━
+            🥫 Et. Cans : ${Math.floor(pal)} P, ${Math.floor(layer)} L, ${Math.floor(can)} cans
+            ━━━━━━━━━━━━━━
+            📦 Et. Cartons : ${Math.floor(pall)} P, ${Math.floor(lay)} L, ${Math.floor(cart)} pcs
             ━━━━━━━━━━━━━━
         `;
 
